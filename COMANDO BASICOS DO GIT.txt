@@ -1,0 +1,77 @@
+*** COMANDOS DO GIT ***
+
+// Assim, após instalar o Git em sua máquina, os dois primeiros comandos a executar no prompt são:
+
+  git config --global user.name "Nome do usuario"
+  git config --global user.email e-mail@exemplo.com
+
+// para inicializar o repositório e criar a pasta oculta .git. Agora, nosso diretório também é o que chamamos na linguagem Git de working area, o diretório de trabalho.
+
+    git init
+
+// Para que possamos adicionar esse arquivo em nosso repositório, primeiro precisamos   adicioná-lo ao stage, o que é feito com o comando:
+
+    git add.  (NomeDoArquivo.extensão)
+
+
+// remover um item do estágio antes de comprometer:
+
+   git rm --cached file.html ou git delete
+
+
+// A partir disso, para confirmar as mudanças e adicionar o novo arquivo ao repositório, precisamos executar:
+
+   git commit -m (Mensagem descritiva)
+
+// Para criar uma branch, execute:
+
+   git branch nomeDoBranch
+
+// Cria um nova branch chamada 'NovoBranch'e define como padrão:
+
+   git checkout -b NovoBranch
+
+// Excluir um branch remoto:
+
+    git push origin --delete  (branch-name)
+
+// Excluir um branch local:
+
+    git branch -D (nome da branch)
+
+// renomear a branch -M (novo nome da branch)
+
+// Logo após, todas as mudanças realizadas a partir de agora estarão acessíveis apenas nesse branch. Portanto, se você criar um ou mais arquivos, ao voltar para o branch master (com o comando git checkout master) esses arquivos não serão encontrados, pois nesse ramo esses arquivos não existem.
+
+
+// para escolher a branch que vai trabalhar:
+
+    git checkout (nome da branch)
+
+
+// Para ver todas as ramificações:
+
+    git branch ou git branch -a (remota)
+
+
+// para juntar a branch master:obs dentro da sua branch você escolhe a branch que ira fazer merge.
+
+    git merge (na sua branch)
+
+// para adicionar uma marcação na branch:
+
+    git tag ( descrição da marcação)
+
+// para visualizar os logs 
+
+    git log (nome da branch)
+
+// Para subir para o repositório remoto
+
+    git push -u origin main
+
+
+*** Estes sâo os comandos basicos do git ***
+
+
+
