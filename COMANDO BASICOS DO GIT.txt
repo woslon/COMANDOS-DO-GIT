@@ -70,6 +70,14 @@
 
     git push -u origin main
 
+// sequencia basica para subir um repositorio:
+
+   git add.
+   git commit -m "Primeiro commit"
+   git remote add origin [URL_DO_REPOSITÓRIO]
+   git push origin master
+
+
 
 *** Estes sâo os comandos basicos do git ***
 
